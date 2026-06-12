@@ -4,7 +4,7 @@ Forward Deployed / Applied AI Engineer. 10+ years owning the MarTech, RevOps, bi
 
 Most of my production work lives in private repos. The demos below are public, runnable, and documented — and every one runs a **real server-side backend** on Cloudflare Pages Functions.
 
-**Site:** [dallascrilley.com](https://dallascrilley.com) · **Don't take my word for the backends:** [ping all six live from your browser](https://demos.dallascrilley.com/ops)
+**Site:** [dallascrilley.com](https://dallascrilley.com) · **Proof ledger:** [sources and caveats for headline metrics](https://dallascrilley.com/proof/) · **Don't take my word for the backends:** [ping all six live from your browser](https://demos.dallascrilley.com/ops)
 
 ## Live demos — six real backends
 
