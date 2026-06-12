@@ -17,6 +17,10 @@ Most of my production work lives in private repos. The demos below are public, r
 
 All demo data is synthetic; the engines, tests, and CI are real. Each repo documents its honest real-vs-synthetic boundary.
 
+## Production-shaped public extract
+
+- [Throughline Connector Kit](https://github.com/dallascrilley/throughline-connector-kit) — sanitized four-method connector contract, in-memory sync engine, synthetic CRM example, and tests extracted from the private Throughline production architecture. No client data, credentials, vendor schemas, or private business logic.
+
 ## Writing
 
 - [Why I Reduced Integration Code by 40× — and Then Stopped There](https://dallascrilley.com/writing/throughline-connectors) — the four-method connector contract
