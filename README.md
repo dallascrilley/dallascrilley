@@ -1,13 +1,14 @@
 # Dallas Crilley
 
-Forward Deployed / Applied AI Engineer. 10+ years owning the MarTech, RevOps, billing, and operations systems most AI hires have only integrated against — now agent-assisted, shipped with evals, tests, and CI in Python and TypeScript.
+Business Systems & Applied AI Engineer. 10+ years owning the MarTech, RevOps, billing, and operations systems most AI hires have only integrated against — now agent-assisted, shipped with evals, tests, and CI in Python and TypeScript.
 
 Most of my production work lives in private repos. The demos below are public, runnable, and documented — and every one runs a **real server-side backend** on Cloudflare Pages Functions.
 
-**Site:** [dallascrilley.com](https://dallascrilley.com) · **Proof ledger:** [sources and caveats for headline metrics](https://dallascrilley.com/proof/) · **Don't take my word for the backends:** [ping all six live from your browser](https://demos.dallascrilley.com/ops)
+**Site:** [dallascrilley.com](https://dallascrilley.com) · **Proof ledger:** [sources and caveats for headline metrics](https://dallascrilley.com/proof/) · **Don't take my word for the backends:** [ping six of them live from your browser](https://demos.dallascrilley.com/ops)
 
-## Live demos — six real backends
+## Live demos — seven real backends
 
+- [RevOps Software Factory](https://dallascrilley.com/demos/revops-factory) — multi-agent review of a synthetic revenue batch; a coordinator dispatches dedup, attribution, and stage-logic agents and returns one verdict with a live token-cost ledger ([repo](https://github.com/dallascrilley/revops-factory-demo))
 - [Q2See](https://demos.dallascrilley.com/q2see) — Quote-to-Cash flow inspector; upload a CRM export, the backend flags the broken handoff ([repo](https://github.com/dallascrilley/q2see-demo))
 - [Apexlint](https://demos.dallascrilley.com/apexlint) — deterministic linter for agent-written Apex / Flow / n8n, 16 unit-tested rules, no LLM in the loop ([repo](https://github.com/dallascrilley/apexlint-demo))
 - [Tracewell](https://demos.dallascrilley.com/tracewell) — flight recorder for AI agents; upload a trace, the backend diagnoses the failure mode ([repo](https://github.com/dallascrilley/tracewell-demo))
