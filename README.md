@@ -1,28 +1,29 @@
 # Dallas Crilley
 
-Business Systems & Applied AI Engineer. 10+ years owning the MarTech, RevOps, billing, and operations systems most AI hires have only integrated against — now agent-assisted, shipped with evals, tests, and CI in Python and TypeScript.
+Applied AI and forward deployed engineer. Ten-plus years owning the MarTech, RevOps, billing, and operations systems most AI hires have only integrated against. The newer layer on top is agent systems shipped with evals, tests, and CI, in Python and TypeScript.
 
-Most of my production work lives in private repos. The demos below are public, runnable, and documented — and every one runs a **real server-side backend** on Cloudflare Pages Functions.
+Most of my production work lives in private repos. The demos below are public, runnable, and documented, and every one runs a **real server-side backend** on Cloudflare Pages Functions.
 
-**Site:** [dallascrilley.com](https://dallascrilley.com) · **Proof ledger:** [sources and caveats for headline metrics](https://dallascrilley.com/proof/) · **Don't take my word for the backends:** [ping six of the seven live from your browser](https://demos.dallascrilley.com/ops) — the seventh, the RevOps factory, makes real model calls, so you run it from its own demo page instead
+**Site:** [dallascrilley.com](https://dallascrilley.com) · **Proof ledger:** [sources and caveats for headline metrics](https://dallascrilley.com/proof/) · **Don't take my word for the backends:** [ping six of the seven live from your browser](https://demos.dallascrilley.com/ops). The seventh, the RevOps factory, makes real model calls, so you run it from its own demo page instead.
 
-## Live demos — seven real backends
+## Live demos: seven real backends
 
-- [RevOps Software Factory](https://dallascrilley.com/demos/revops-factory) — multi-agent review of a synthetic revenue batch; a coordinator dispatches dedup, attribution, and stage-logic agents and returns one verdict with a live token-cost ledger ([repo](https://github.com/dallascrilley/revops-factory-demo))
-- [Q2See](https://demos.dallascrilley.com/q2see) — Quote-to-Cash flow inspector; upload a CRM export, the backend flags the broken handoff ([repo](https://github.com/dallascrilley/q2see-demo))
-- [Apexlint](https://demos.dallascrilley.com/apexlint) — deterministic linter for agent-written Apex / Flow / n8n, 16 unit-tested rules, no LLM in the loop ([repo](https://github.com/dallascrilley/apexlint-demo))
-- [Tracewell](https://demos.dallascrilley.com/tracewell) — flight recorder for AI agents; upload a trace, the backend diagnoses the failure mode ([repo](https://github.com/dallascrilley/tracewell-demo))
-- [Inboxward](https://demos.dallascrilley.com/inboxward) — deliverability cockpit with **live SPF / DKIM / DMARC DNS inspection** of any domain ([repo](https://github.com/dallascrilley/inboxward-demo))
-- [Forager](https://demos.dallascrilley.com/forager) — Slack-export → confidence-scored Q&A knowledge base via real server-side ingestion ([repo](https://github.com/dallascrilley/forager-demo))
-- [Funnelguard](https://demos.dallascrilley.com/funnelguard) — marketing-funnel config linter, 13 deterministic rules ([repo](https://github.com/dallascrilley/funnelguard-demo))
+- [RevOps Software Factory](https://dallascrilley.com/demos/revops-factory): multi-agent review of a synthetic revenue batch; a coordinator dispatches dedup, attribution, and stage-logic agents and returns one verdict with a live token-cost ledger ([repo](https://github.com/dallascrilley/revops-factory-demo))
+- [Q2See](https://demos.dallascrilley.com/q2see): Quote-to-Cash flow inspector; upload a CRM export and the backend flags the broken handoff ([repo](https://github.com/dallascrilley/q2see-demo))
+- [Apexlint](https://demos.dallascrilley.com/apexlint): deterministic linter for agent-written Apex / Flow / n8n, 16 unit-tested rules, no LLM in the loop ([repo](https://github.com/dallascrilley/apexlint-demo))
+- [Tracewell](https://demos.dallascrilley.com/tracewell): flight recorder for AI agents; upload a trace and the backend diagnoses the failure mode ([repo](https://github.com/dallascrilley/tracewell-demo))
+- [Inboxward](https://demos.dallascrilley.com/inboxward): deliverability cockpit with **live SPF / DKIM / DMARC DNS inspection** of any domain ([repo](https://github.com/dallascrilley/inboxward-demo))
+- [Forager](https://demos.dallascrilley.com/forager): turns a Slack export into a confidence-scored Q&A knowledge base via real server-side ingestion ([repo](https://github.com/dallascrilley/forager-demo))
+- [Funnelguard](https://demos.dallascrilley.com/funnelguard): marketing-funnel config linter, 13 deterministic rules ([repo](https://github.com/dallascrilley/funnelguard-demo))
 
-All demo data is synthetic; the engines, tests, and CI are real. Each repo documents its honest real-vs-synthetic boundary.
+All demo data is synthetic; the engines, tests, and CI are real. Each repo documents exactly what is real and what is synthetic.
 
 ## Production-shaped public extract
 
-- [Throughline Connector Kit](https://github.com/dallascrilley/throughline-connector-kit) — sanitized four-method connector contract, in-memory sync engine, synthetic CRM example, and tests extracted from the private Throughline production architecture. No client data, credentials, vendor schemas, or private business logic.
+- [Throughline Connector Kit](https://github.com/dallascrilley/throughline-connector-kit): sanitized four-method connector contract, in-memory sync engine, synthetic CRM example, and tests extracted from the private Throughline production architecture. No client data, credentials, vendor schemas, or private business logic.
 
 ## Writing
 
-- [Why I Reduced Integration Code by 40× — and Then Stopped There](https://dallascrilley.com/writing/throughline-connectors) — the four-method connector contract
-- [When the API Returns 500, Did the Charge Post or Not?](https://dallascrilley.com/writing/meter-idempotent-sync) — idempotent billing sync in production
+- [The Four-Method Connector Contract, and Knowing When to Stop](https://dallascrilley.com/writing/throughline-connectors): one connector boundary shared by six vendor integrations
+- [When the API Returns 500, Did the Charge Post or Not?](https://dallascrilley.com/writing/meter-idempotent-sync): idempotent billing sync in production
+- [The Gate Has to Stand Without the LLM](https://dallascrilley.com/writing/cohost-eval-gate): deterministic metrics block, LLM evals advise, a human owns the irreversible call
