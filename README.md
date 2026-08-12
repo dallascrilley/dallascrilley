@@ -22,15 +22,14 @@ All demo data is synthetic; the engines, tests, and CI are real. Each repo docum
 
 - [Throughline Connector Kit](https://github.com/dallascrilley/throughline-connector-kit): sanitized four-method connector contract, in-memory sync engine, synthetic CRM example, and tests extracted from the private Throughline production architecture. No client data, credentials, vendor schemas, or private business logic.
 
-## Released tools: Waves 1–3
+## Released tools: Waves 1–4
 
 - **Agent and delivery systems:** [Broadside](https://github.com/dallascrilley/broadside), [Shipwright](https://github.com/dallascrilley/shipwright), [Yardmaster](https://github.com/dallascrilley/yardmaster), [Quorum](https://github.com/dallascrilley/quorum), [Muster](https://github.com/dallascrilley/muster), [Onward](https://github.com/dallascrilley/onward)
 - **Developer tools:** [Polycast](https://github.com/dallascrilley/polycast), [XAir CLI](https://github.com/dallascrilley/xair-cli), [Vaultkeep](https://github.com/dallascrilley/vaultkeep), [Trifold](https://github.com/dallascrilley/trifold), [RepoMan](https://github.com/dallascrilley/repoman), [Placard](https://github.com/dallascrilley/placard)
 - **Evaluation and inspection:** [Gradewell](https://github.com/dallascrilley/gradewell), [Dowser](https://github.com/dallascrilley/dowser), [Winnow](https://github.com/dallascrilley/winnow), [Marrow](https://github.com/dallascrilley/marrow), [Reconciler](https://github.com/dallascrilley/reconciler)
 - **Presentation and packaging:** [Showwright](https://github.com/dallascrilley/showwright), [Deckhand](https://github.com/dallascrilley/deckhand), [Outfitter](https://github.com/dallascrilley/outfitter)
 
-Wave 4 will add Cinderwell, Tenantwell, Holdfast, and Landfall after those
-repositories land.
+- **Wave 4 production extracts:** [Cinderwell](https://github.com/dallascrilley/cinderwell) runs disposable cloud dev servers under self-destructing leases; [Tenantwell](https://github.com/dallascrilley/tenantwell) proves Postgres row-level tenant isolation; [Holdfast](https://github.com/dallascrilley/holdfast) keeps an append-only decision ledger behind human publication approval; [Landfall](https://github.com/dallascrilley/landfall) migrates WordPress sites to Astro and verifies URL parity.
 
 ## Writing
 
@@ -42,6 +41,6 @@ repositories land.
 
 The graph shows more than 100,000 commits in the past year. Agents wrote most of them. I run coding agents in parallel worktrees through the workday, they commit under my login, and each of those commits lands on the graph.
 
-I author the layer that decides whether agent work survives. The repository's own verification command runs against every change, CI blocks the merge until it passes, and a human makes each irreversible call. Three of the pinned repos are that layer as working code: [Shipwright](https://github.com/dallascrilley/shipwright) opens a pull request only after the target repository's test command exits zero in a disposable sandbox, [Quorum](https://github.com/dallascrilley/quorum) sends agent output to human reviewers who return a consensus verdict, and [Reconciler](https://github.com/dallascrilley/reconciler) blocks invoice changes until a person approves the flagged discrepancy.
+I author the layer that decides whether agent work survives. The repository's own verification command runs against every change, CI blocks the merge until it passes, and a human makes each irreversible call. Three of the released repos are that layer as working code: [Shipwright](https://github.com/dallascrilley/shipwright) opens a pull request only after the target repository's test command exits zero in a disposable sandbox, [Quorum](https://github.com/dallascrilley/quorum) sends agent output to human reviewers who return a consensus verdict, and [Reconciler](https://github.com/dallascrilley/reconciler) blocks invoice changes until a person approves the flagged discrepancy.
 
 Open any repo's history and you can see the split. Agent commits carry the implementation. My commits set direction, resolve review findings, and cut releases.
