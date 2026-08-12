@@ -27,3 +27,11 @@ All demo data is synthetic; the engines, tests, and CI are real. Each repo docum
 - [The Four-Method Connector Contract, and Knowing When to Stop](https://dallascrilley.com/writing/throughline-connectors): one connector boundary shared by six vendor integrations
 - [When the API Returns 500, Did the Charge Post or Not?](https://dallascrilley.com/writing/meter-idempotent-sync): idempotent billing sync in production
 - [The Gate Has to Stand Without the LLM](https://dallascrilley.com/writing/cohost-eval-gate): deterministic metrics block, LLM evals advise, a human owns the irreversible call
+
+## The commit graph below this README
+
+The graph shows more than 100,000 commits in the past year. Agents wrote most of them. I run coding agents in parallel worktrees through the workday, they commit under my login, and each of those commits lands on the graph.
+
+I author the layer that decides whether agent work survives. The repository's own verification command runs against every change, CI blocks the merge until it passes, and a human makes each irreversible call. Two of the pinned repos are that layer as working code: [Shipwright](https://github.com/dallascrilley/shipwright) opens a pull request only after the target repository's test command exits zero in a disposable sandbox, and [Quorum](https://github.com/dallascrilley/quorum) sends agent output to human reviewers who return a consensus verdict.
+
+Open any repo's history and you can see the split. Agent commits carry the implementation. My commits set direction, resolve review findings, and cut releases.
