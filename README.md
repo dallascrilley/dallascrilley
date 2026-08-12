@@ -22,6 +22,16 @@ All demo data is synthetic; the engines, tests, and CI are real. Each repo docum
 
 - [Throughline Connector Kit](https://github.com/dallascrilley/throughline-connector-kit): sanitized four-method connector contract, in-memory sync engine, synthetic CRM example, and tests extracted from the private Throughline production architecture. No client data, credentials, vendor schemas, or private business logic.
 
+## Released tools: Waves 1–3
+
+- **Agent and delivery systems:** [Broadside](https://github.com/dallascrilley/broadside), [Shipwright](https://github.com/dallascrilley/shipwright), [Yardmaster](https://github.com/dallascrilley/yardmaster), [Quorum](https://github.com/dallascrilley/quorum), [Muster](https://github.com/dallascrilley/muster), [Onward](https://github.com/dallascrilley/onward)
+- **Developer tools:** [Polycast](https://github.com/dallascrilley/polycast), [XAir CLI](https://github.com/dallascrilley/xair-cli), [Vaultkeep](https://github.com/dallascrilley/vaultkeep), [Trifold](https://github.com/dallascrilley/trifold), [Plumbline](https://github.com/dallascrilley/plumbline), [Placard](https://github.com/dallascrilley/placard)
+- **Evaluation and inspection:** [Gradewell](https://github.com/dallascrilley/gradewell), [Dowser](https://github.com/dallascrilley/dowser), [Winnow](https://github.com/dallascrilley/winnow), [Marrow](https://github.com/dallascrilley/marrow), [Reconciler](https://github.com/dallascrilley/reconciler)
+- **Presentation and packaging:** [Showwright](https://github.com/dallascrilley/showwright), [Deckhand](https://github.com/dallascrilley/deckhand), [Outfitter](https://github.com/dallascrilley/outfitter)
+
+Wave 4 will add Cinderwell, Tenantwell, Holdfast, and Landfall after those
+repositories land.
+
 ## Writing
 
 - [The Four-Method Connector Contract, and Knowing When to Stop](https://dallascrilley.com/writing/throughline-connectors): one connector boundary shared by six vendor integrations
