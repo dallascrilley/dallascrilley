@@ -12,6 +12,8 @@
 
 The full catalog — with sources and caveats for every headline metric — lives on the [proof ledger](https://dallascrilley.com/proof).
 
+**Catalog provenance:** much of this catalog was published to public GitHub in one recent pass while assembling the proof ledger — a repo's publication date is not its development timeline. Where the scaffold-vs-hand-written split matters, the repo carries receipts (e.g. Winnow's [`docs/receipts.md`](https://github.com/dallascrilley/winnow/blob/main/docs/receipts.md)).
+
 ## Agent commits
 
 Agents commit under this login; I own the merge gate. The repository's own verification command runs against every change, CI blocks the merge until it passes, and a human makes each irreversible call. The three repos above are that gate as working code: Shipwright won't open a PR until the tests pass, Vouch routes agent output to human reviewers for a consensus verdict, and Holdfast enforces the publish gate inside Postgres. Open any repo's history and you can see the split: agent commits carry the implementation; my commits set direction, resolve review findings, and cut releases.
