@@ -18,7 +18,7 @@ The full catalog — with sources and caveats for every headline metric — live
 
 ## Agent commits
 
-Agents commit under this login; I own the merge gate. The repository's own verification command runs against every change, CI blocks the merge until it passes, and a human makes each irreversible call. Shipwright, Vouch, and Holdfast show those boundaries as working code. Open any repo's history and you can see the split: agent commits carry implementation; my commits set direction, resolve review findings, and cut releases.
+Agents commit under this login; I own the merge gate. I require each repository's verification command to pass before merging and wait for CI where it is configured; a human makes each irreversible call. Shipwright, Vouch, and Holdfast show those boundaries as working code. Open any repo's history and you can see the split: agent commits carry implementation; my commits set direction, resolve review findings, and cut releases.
 
 ## Writing
 
