@@ -1,26 +1,26 @@
 # Dallas Crilley
 
-Forward-deployed applied-AI engineer with 10 years turning revenue and operations workflows into production systems. Recent work includes billing automation running for ~19 months, a data backbone spanning six production vendor integrations, and evaluated AI workflows with human approval gates.
+I build the integrations, internal tools, and automation that connect how a business runs. Ten years inside my family's PR firm in Dallas as the only engineer: CRM, billing, six vendor APIs, and lately AI pipelines with a person holding the release button. Python and TypeScript.
 
-**Site:** [dallascrilley.com](https://dallascrilley.com) · **Hiring?** [dallascrilley.com/hire](https://dallascrilley.com/hire) · **Proof ledger:** [dallascrilley.com/proof](https://dallascrilley.com/proof)
+**Site:** [dallascrilley.com](https://dallascrilley.com) · **Email:** dallas@dallascrilley.com
 
-## Start with the forward-deployed lifecycle
+## Start here
 
-- [Throughline Connector Kit](https://github.com/dallascrilley/throughline-connector-kit): the sanitized four-method connector contract and sync engine behind six production vendor integrations
-- [Shipwright](https://github.com/dallascrilley/shipwright): a tested portfolio implementation of the approved-issue-to-reviewable-PR boundary; live execution is labeled self-reported
-- [Winnow](https://github.com/dallascrilley/winnow): lead scoring and routing with a model-evaluation gate, explicit review thresholds, and implementation receipts
-- [Vouch](https://github.com/dallascrilley/vouch): human review as an API, with 173 tests and offline end-to-end harnesses using simulated reviewers
-- [Holdfast](https://github.com/dallascrilley/holdfast): a production-derived append-only decision ledger and human publish gate rebuilt around a synthetic domain
+- [throughline-connector-kit](https://github.com/dallascrilley/throughline-connector-kit): the four-method connector contract and sync engine behind six production vendor integrations, sanitized
+- [reconciler](https://github.com/dallascrilley/reconciler): billing discrepancy detection with a required human approval before any invoice changes, on synthetic data; the engine came out of Meter
+- [vouch](https://github.com/dallascrilley/vouch): human review as an API, with offline end-to-end harnesses that use simulated reviewers
+- [shipwright](https://github.com/dallascrilley/shipwright): approved issue to reviewable pull request, with tests on the handoff between agent output and human review
+- [holdfast](https://github.com/dallascrilley/holdfast): append-only decision ledger and a human publish gate, rebuilt around a synthetic domain
 
-The full catalog — with sources and caveats for every headline metric — lives on the [proof ledger](https://dallascrilley.com/proof).
+The production systems these came from (Meter, Throughline, CoHost AI Studio) are private. The site tells each story, including which numbers are self-reported.
 
-**Catalog provenance:** much of this catalog was published to public GitHub in one recent pass while assembling the proof ledger — a repo's publication date is not its development timeline. Where the scaffold-vs-hand-written split matters, the repo carries receipts (e.g. Winnow's [`docs/receipts.md`](https://github.com/dallascrilley/winnow/blob/main/docs/receipts.md)).
+Most of this catalog was published in one pass while I assembled the portfolio, so a repo's first commit date is not its development timeline. Where the scaffold-versus-hand-written split matters, the repo says so (see Winnow's [docs/receipts.md](https://github.com/dallascrilley/winnow/blob/main/docs/receipts.md)).
 
 ## Agent commits
 
-Agents commit under this login; I own the merge gate. I require each repository's verification command to pass before merging and wait for CI where it is configured; a human makes each irreversible call. Shipwright, Vouch, and Holdfast show those boundaries as working code. Open any repo's history and you can see the split: agent commits carry implementation; my commits set direction, resolve review findings, and cut releases.
+Agents commit under this login and I own the merge. Each repository's verification command has to pass before I merge, CI runs where it exists, and a person makes every irreversible call. Open any repo's history and the split is visible: agent commits carry implementation, my commits set direction, resolve review findings, and cut releases.
 
 ## Writing
 
-- [The Four-Method Connector Contract, and Knowing When to Stop](https://dallascrilley.com/writing/throughline-connectors): one connector boundary shared by six vendor integrations
-- [When the API Returns 500, Did the Charge Post or Not?](https://dallascrilley.com/writing/meter-idempotent-sync): idempotent billing sync in production
+- [The Four-Method Connector Contract, and Knowing When to Stop](https://dallascrilley.com/writing/throughline-connectors)
+- [When the API Returns 500, Did the Charge Post or Not?](https://dallascrilley.com/writing/meter-idempotent-sync)
