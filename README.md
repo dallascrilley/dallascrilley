@@ -7,7 +7,7 @@ I build the integrations, internal tools, and automation that connect how a busi
 ## Start here
 
 - [throughline-connector-kit](https://github.com/dallascrilley/throughline-connector-kit): the four-method connector contract and sync engine behind six production vendor integrations, sanitized
-- [reconciler](https://github.com/dallascrilley/reconciler): billing discrepancy detection with a required human approval before any invoice changes, on synthetic data; the engine came out of Meter
+- [reconciler](https://github.com/dallascrilley/reconciler): billing discrepancy detection with a required human approval before any invoice changes, on synthetic data; a synthetic rebuild inspired by private Meter billing-audit work
 - [vouch](https://github.com/dallascrilley/vouch): human review as an API, with offline end-to-end harnesses that use simulated reviewers
 - [shipwright](https://github.com/dallascrilley/shipwright): approved issue to reviewable pull request, with tests on the handoff between agent output and human review
 - [holdfast](https://github.com/dallascrilley/holdfast): append-only decision ledger and a human publish gate, rebuilt around a synthetic domain
